@@ -34,7 +34,7 @@ scrape_configs:
     scrape_interval: 15s
 
     static_configs:
-         - targets: ['localhost:9090']
+         - targets: ['localhost:9097']
 
   - job_name: 'cadvisor'
 
@@ -42,7 +42,7 @@ scrape_configs:
     scrape_interval: 15s
 
     static_configs:
-      - targets: ['cadvisor:8080']
+      - targets: ['cadvisor:8087']
 
   - job_name: 'node-exporter'
 
